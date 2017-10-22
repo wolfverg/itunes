@@ -3,8 +3,10 @@
 
 .wrappered{
     background-image: url('../styles/img/BannerMobile.png');
-    background-size: cover ;
+    background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
     background-position: center center;
    
     position: relative;
@@ -43,9 +45,9 @@ h3{
     color: #808080;
     font-size: 18px;
     margin-top: 25px; 
-    margin-left: 30px;
+    margin-left: 50px;
 }
-ul{
+ul.basic{
     font-family: Montserrat;
     list-style:none;
     text-align: left;
@@ -54,7 +56,9 @@ ul{
     color: #4D4D4D;
     display: flex;
     flex-flow: column wrap;
+    margin-left:30px;
 }
+
 ol{
     font-family: Montserrat;
     line-height: 30px;
@@ -64,6 +68,9 @@ ol{
     color: #4D4D4D;
     display: flex;
     flex-flow: column wrap;
+    margin-left: auto;
+    margin-right:auto;
+    margin-left:30px;
 }
 
 .button{
@@ -74,11 +81,6 @@ ol{
     align-items: center;
 }
 
-.socialmedia{
-    width: 40px;
-    height: 40px;
-}
-
 .lijn {
     width:100%;
     height: 14px;
@@ -87,6 +89,50 @@ ol{
     width:100%;
     height: 200px;
 }
+.socialmediablok{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+ul.socialmedia {
+    display: block;
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 10px;
+    overflow: hidden;
+    float: left;
+}
+li {
+    float: left;
+}
+li a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    margin:5px;
+    text-decoration: none;
+}
+.twitter{
+    background-image: url('../styles/img/TwitterLogo.png');
+    background-size: cover;
+    margin:10px;
+}
+.facebook{
+    background-image: url('../styles/img/FacebookLogo.png');
+    background-size: cover;
+    margin:10px;
+}
+.instagram{
+    background-image: url('../styles/img/InstagramLogo.png');
+    background-size: cover;
+    margin:10px;
+}
+.website{
+    background-image: url('../styles/img/WebsiteLogo.png');
+    background-size: cover;
+    margin:10px;
+}
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 
@@ -94,10 +140,32 @@ ol{
 @media (min-width: 576px) { ... }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) { 
+
+    .wrappered {
+        background-image: url('../styles/img/BannerDesktop.png');
+        height: 400px;
+    }
+
+    .wrappered1 {
+        height: 20px;
+        width: 10px;
+    }
+  
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) { 
+
+    .wrappered {
+        background-image: url('../styles/img/BannerDesktop.png');
+        height: 400px;
+    }
+
+    .wrappered1 {
+        height: 20px;
+        width: 10px;
+    }
+
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
